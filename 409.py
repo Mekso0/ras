@@ -229,7 +229,7 @@ def timecyc(message):
         url_button = types.InlineKeyboardButton(text="☁️ Палитра цветов", url="https://g.co/kgs/KDTzamf")
         kb.add(url_button)
         bot.send_message(message.chat.id,"☁️")
-        bot.send_message(message.chat.id, time, reply_markup=kb)
+        bot.send_message(message.chat.id, "❕Используй /timecyc низнеба, верхнеба, облака, цвет солнца.\nК примеру:\n/timecyc #FF0000 #00FF00 #0000FF #FFFFFF\nИспользуй палитру цветов которая представлена ниже", reply_markup=kb)
         return
     code = token_hex(3)
     print(f"Создан файл it.{code}_timecyc.json")
